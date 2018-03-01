@@ -126,6 +126,23 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>org.mortbay.jetty</groupId>
+                <artifactId>maven-jetty-plugin</artifactId>
+                <version>6.1.22</version>
+                <configuration>
+                    <scanIntervalSeconds>-1</scanIntervalSeconds>
+                    <webDefaultXml>src/main/resources/webdefault.xml</webDefaultXml>
+                    <connectors>
+                        <connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
+                            <port>80</port>
+                            <host>demo.spring.com</host>
+                        </connector>
+                    </connectors>
+                    <contextPath>/</contextPath>
+                </configuration>
+
+            </plugin>
         </plugins>
     </build>
 </project>
