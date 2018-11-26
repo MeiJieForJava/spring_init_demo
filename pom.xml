@@ -110,6 +110,16 @@
             <version>4.1.7.RELEASE</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.8</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jd.union</groupId>
+            <artifactId>com.jd.union.api.jtk</artifactId>
+            <version>0.3.23-SNAPSHOT</version>
+        </dependency>
     </dependencies>
     <build>
         <finalName>spring_init_demo</finalName>
